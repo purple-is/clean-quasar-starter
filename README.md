@@ -1,6 +1,10 @@
-# Quasar App (clean-quasar-starter)
+# clean-quasar-starter
+A clean starter template for Quasar v1
 
-A Quasar Framework app
+## Clone the project
+```bash
+git clone git@github.com:purple-is/clean-quasar-starter.git
+```
 
 ## Install the dependencies
 ```bash
@@ -17,6 +21,3 @@ yarn dev
 ```bash
 quasar build
 ```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://v1.quasar.dev/quasar-cli/quasar-conf-js).
