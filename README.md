@@ -6,12 +6,7 @@ A clean starter template for Quasar v1
 git clone git@github.com:purple-is/clean-quasar-starter.git
 ```
 
-## Install the dependencies
-```bash
-yarn
-```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### install deps & start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
 yarn dev
 ```
