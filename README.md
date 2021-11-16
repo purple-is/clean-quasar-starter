@@ -10,9 +10,3 @@ git clone git@github.com:purple-is/clean-quasar-starter.git
 ```bash
 yarn dev
 ```
-
-
-### Build the app for production
-```bash
-quasar build
-```
