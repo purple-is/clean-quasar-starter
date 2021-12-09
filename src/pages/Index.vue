@@ -30,8 +30,8 @@
 
 <script>
 import axios from 'axios'
-const libraryApiKey = '47485aa6-4c44-4b88-92be4679123c-5b4f-4f7a'
-const libraryID = 11873
+const libraryApiKey = 'bd9c1d6a-7e53-477a-8e908f3cbaa9-3337-4426'
+const libraryID = 19390
 
 export default {
   name: 'PageIndex',
