@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "@silvermine/videojs-chromecast": "^1.3.3",
     "core-js": "^3.6.5",
     "quasar": "^1.0.0",
-    "video.js": "^7.17.0",
-    "@silvermine/videojs-chromecast": "^1.3.3"
+    "video.js": "^7.17.0"
   },
   "devDependencies": {
     "@quasar/app": "^2.0.0"

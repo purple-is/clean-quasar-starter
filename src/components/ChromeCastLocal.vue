@@ -25,18 +25,10 @@ export default {
   },
   mounted() {
     this.player = videojs(this.$refs.video, {
-      autoplay: false,
       controls: true,
-      preload: "auto",
       techOrder: ["chromecast", "html5"],
       plugins: {
-        chromecast: {
-          addButtonToControlBar: true,
-          metadata: {
-            title: "Title For Chromecast",
-            subtitle: "Subtitle For Chromecast"
-          }
-        }
+        chromecast: {}
       }
     });
 
