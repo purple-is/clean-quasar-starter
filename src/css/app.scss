@@ -1,2 +1,39 @@
-// app global css in SCSS form
-@import "../../node_modules/@silvermine/videojs-chromecast/src/scss/videojs-chromecast";
+$chromecast-icon-size: 16px !default;
+
+@import "@silvermine/videojs-chromecast/src/scss/videojs-chromecast";
+
+/** Chromecast **/
+$icon-chromecast-default: "/images/chromecast_idle.png" !default;
+$icon-chromecast-casting: "/images/chromecast_connected.png" !default;
+$chromecast-icon-size: 16px !default;
+
+.vjs-chromecast-button {
+  cursor: pointer;
+  .vjs-icon-placeholder {
+    background: url($icon-chromecast-default) center center no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: $chromecast-icon-size;
+    height: $chromecast-icon-size;
+  }
+  &.vjs-chromecast-casting-state {
+    .vjs-icon-placeholder {
+      background-image: url($icon-chromecast-casting);
+    }
+  }
+}
+
+/** AirPlay **/
+$icon-airplay-default: "/images/airplay.png" !default;
+$airplay-icon-size: 24px !default;
+
+.vjs-airplay-button {
+  cursor: pointer;
+  .vjs-icon-placeholder {
+    background: url($icon-airplay-default) center center no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: $airplay-icon-size;
+    height: $airplay-icon-size;
+  }
+}

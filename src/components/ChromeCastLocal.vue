@@ -14,8 +14,7 @@
 
 <script>
 import videojs from "video.js";
-import "video.js/dist/video-js.css";
-import "@silvermine/videojs-chromecast/dist/silvermine-videojs-chromecast.css";
+
 export default {
   name: "ChromeCastLocal",
   data() {
@@ -26,12 +25,10 @@ export default {
   mounted() {
     this.player = videojs(this.$refs.video, {
       controls: true,
-      techOrder: ["chromecast", "html5"],
-      plugins: {
-        chromecast: {}
-      }
+      techOrder: ["chromecast", "html5"]
     });
 
+    this.player.chromecast();
     this.player.on("chromecastConnected", function() {
       console.log("connected");
     });

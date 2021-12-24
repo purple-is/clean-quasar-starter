@@ -23,6 +23,7 @@ import ChromeCastURL from "src/components/ChromeCastURL.vue";
 import ChromeCastLocal from "src/components/ChromeCastLocal.vue";
 import videojs from "video.js";
 import chromecast from "@silvermine/videojs-chromecast";
+import "video.js/dist/video-js.css";
 export default {
   components: { ChromeCastURL, ChromeCastLocal },
   name: "PageIndex",
