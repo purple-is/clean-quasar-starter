@@ -6,13 +6,11 @@
       preload="auto"
       data-setup='{ "fluid": "true" }'
       class="video video-js full-width"
-    ></video>
+    />
   </div>
 </template>
-
 <script>
 import videojs from "video.js";
-
 export default {
   name: "ChromeCastRemote",
   data() {
@@ -28,13 +26,7 @@ export default {
         "https://f001.backblazeb2.com/file/purple-content/products/catalog/lsv_Santos_Portrait_Painting/media/lsv_Santos_Portrait_Painting_11.mp4"
       ]
     });
-    this.player.chromecast()
-    this.player.on("chromecastConnected", function() {
-      console.log("connected");
-    });
-    this.player.on("chromecastDisconnected", function() {
-      console.log("disconnected");
-    });
+    this.player.chromecast();
   },
   beforeDestroy() {
     if (this.player) {

@@ -4,14 +4,13 @@
     <video
       ref="video"
       preload="auto"
-      class="video-js full-width"
       data-setup='{ "fluid": "true" }'
-    >
+      class="video video-js full-width"
+      >
       <source src="../assets/hs_blues11_11.mp4" type="video/mp4" />
     </video>
   </div>
 </template>
-
 <script>
 import videojs from "video.js";
 
@@ -27,14 +26,7 @@ export default {
       controls: true,
       techOrder: ["chromecast", "html5"]
     });
-
     this.player.chromecast();
-    this.player.on("chromecastConnected", function() {
-      console.log("connected");
-    });
-    this.player.on("chromecastDisconnected", function() {
-      console.log("disconnected");
-    });
   },
   beforeDestroy() {
     if (this.player) {
