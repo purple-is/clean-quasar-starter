@@ -46,6 +46,10 @@ module.exports = function (/* ctx */) {
 
       // transpile: false,
 
+      env: {
+        ROOT_DIR: __dirname
+      },
+
       // Add dependencies for transpiling with Babel (Array of string/regex)
       // (from node_modules, which are by default not transpiled).
       // Applies only if "transpile" is set to true.

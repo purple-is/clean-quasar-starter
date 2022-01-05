@@ -6,7 +6,8 @@
   "author": "Josh Mellicker",
   "private": true,
   "scripts": {
-    "dev": "yarn && quasar dev"
+    "dev": "yarn && quasar dev",
+    "dev-ios": "quasar dev -m capacitor -T ios"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
