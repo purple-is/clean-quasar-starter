@@ -2,11 +2,6 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-        />
 
         <q-toolbar-title>
           Starter Quasar App
