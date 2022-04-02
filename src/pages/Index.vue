@@ -36,8 +36,6 @@ export default {
       this.buttonLabel = 'Start Game'
     },
     go() {
-      console.log(this.showResult)
-
       if (this.showResult) {
         this.initGame()
       } else {
